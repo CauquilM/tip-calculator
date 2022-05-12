@@ -3,13 +3,18 @@ function Bill(props) {
     props.returnBill(tip);
   };
   return (
-    <div>
+    <div className="input-field">
+      <span className="icon">
+        <i className="material-icons prefix" style={{ color: "#a3babb" }}>
+          attach_money
+        </i>
+      </span>
       <input
         dir="rtl"
         style={{
           borderBottom: "none",
           boxShadow: "none",
-          backgroundColor: "#f3f8fb"
+          backgroundColor: "#f3f8fb",
         }}
         placeholder="0"
         min={0}

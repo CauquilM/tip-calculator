@@ -10,6 +10,7 @@ function CustomTip(props) {
         style={{
           borderBottom: "none",
           boxShadow: "none",
+          backgroundColor: "#f3f8fb"
         }}
         placeholder="0"
         type="number"
