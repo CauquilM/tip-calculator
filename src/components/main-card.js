@@ -11,6 +11,7 @@ function MainCard() {
   const [returnedPeople, setReturnedPeople] = useState();
   const [tipPerson, setTipPerson] = useState("0");
   const [totalPerson, setTotalPerson] = useState("0");
+  // const [selected, setSelected] = useState();
 
   const toChildrenBill = (bill) => {
     setReturnedBill(bill);
@@ -58,20 +59,20 @@ function MainCard() {
               <Bill returnBill={toChildrenBill} />
               <div className="row" style={{ marginTop: "35px" }}>
                 <div className="col s4">
-                  <SelectTip amount="5" returnTip={toChildrenTip} />
+                  {returnedTip === "5" ? <SelectTip amount="5" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="5" returnTip={toChildrenTip} selected={false} />}
                 </div>
                 <div className="col s4">
-                  <SelectTip amount="10" returnTip={toChildrenTip} />
+                  {returnedTip === "10" ? <SelectTip amount="10" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="10" returnTip={toChildrenTip} selected={false} />}
                 </div>
                 <div className="col s4">
-                  <SelectTip amount="15" returnTip={toChildrenTip} />
+                  {returnedTip === "15" ? <SelectTip amount="15" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="15" returnTip={toChildrenTip} selected={false} />}
                 </div>
 
                 <div className="col s4">
-                  <SelectTip amount="25" returnTip={toChildrenTip} />
+                  {returnedTip === "25" ? <SelectTip amount="25" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="25" returnTip={toChildrenTip} selected={false} />}
                 </div>
                 <div className="col s4">
-                  <SelectTip amount="50" returnTip={toChildrenTip} />
+                  {returnedTip === "50" ? <SelectTip amount="50" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="50" returnTip={toChildrenTip} selected={false} />}
                 </div>
                 <div className="col s4">
                   <CustomTip returnTip={toChildrenTip} />

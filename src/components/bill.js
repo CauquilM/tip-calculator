@@ -12,6 +12,7 @@ function Bill(props) {
           backgroundColor: "#f3f8fb"
         }}
         placeholder="0"
+        min={0}
         type="number"
         className="validate"
         onChange={(event) => returnBill(event.target.value)}

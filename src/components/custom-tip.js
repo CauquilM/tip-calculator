@@ -6,6 +6,7 @@ function CustomTip(props) {
     <div>
       <input
         dir="rtl"
+        min={0}
         style={{
           borderBottom: "none",
           boxShadow: "none",

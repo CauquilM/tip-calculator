@@ -5,7 +5,14 @@ function SelectTip(props) {
   };
   return (
     <div>
-      <a className="waves-effect waves-light btn" onClick={returnTip}>
+      <a
+        className="waves-effect waves-light btn"
+        onClick={returnTip}
+        style={{
+          backgroundColor: props.selected ? "#a0e7df" : "#00474a",
+          color: props.selected ? "black" : "white",
+        }}
+      >
         {props.amount}%
       </a>
     </div>
