@@ -55,31 +55,107 @@ function MainCard() {
       <div className="card white" style={{ borderRadius: "20px" }}>
         <div className="card-content">
           <div className="row">
-            <div className="col s6" style={{ marginTop: "35px" }}>
-              <Bill returnBill={toChildrenBill} />
-              <div className="row" style={{ marginTop: "35px" }}>
-                <div className="col s4">
-                  {returnedTip === "5" ? <SelectTip amount="5" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="5" returnTip={toChildrenTip} selected={false} />}
-                </div>
-                <div className="col s4">
-                  {returnedTip === "10" ? <SelectTip amount="10" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="10" returnTip={toChildrenTip} selected={false} />}
-                </div>
-                <div className="col s4">
-                  {returnedTip === "15" ? <SelectTip amount="15" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="15" returnTip={toChildrenTip} selected={false} />}
-                </div>
+            <div className="col s6" style={{ marginTop: "10px" }}>
+              <fieldset style={{ border: "none" }}>
+                <legend className="left-align teal-text text-darken-1">
+                  Bill
+                </legend>
+                <Bill returnBill={toChildrenBill} />
+              </fieldset>
+              <fieldset style={{ border: "none" }}>
+                <legend className="left-align teal-text text-darken-1">
+                  Select Tip %
+                </legend>
+                <div className="row">
+                  <div className="col s4">
+                    {returnedTip === "5" ? (
+                      <SelectTip
+                        amount="5"
+                        returnTip={toChildrenTip}
+                        selected={true}
+                      />
+                    ) : (
+                      <SelectTip
+                        amount="5"
+                        returnTip={toChildrenTip}
+                        selected={false}
+                      />
+                    )}
+                  </div>
+                  <div className="col s4">
+                    {returnedTip === "10" ? (
+                      <SelectTip
+                        amount="10"
+                        returnTip={toChildrenTip}
+                        selected={true}
+                      />
+                    ) : (
+                      <SelectTip
+                        amount="10"
+                        returnTip={toChildrenTip}
+                        selected={false}
+                      />
+                    )}
+                  </div>
+                  <div className="col s4">
+                    {returnedTip === "15" ? (
+                      <SelectTip
+                        amount="15"
+                        returnTip={toChildrenTip}
+                        selected={true}
+                      />
+                    ) : (
+                      <SelectTip
+                        amount="15"
+                        returnTip={toChildrenTip}
+                        selected={false}
+                      />
+                    )}
+                  </div>
 
-                <div className="col s4">
-                  {returnedTip === "25" ? <SelectTip amount="25" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="25" returnTip={toChildrenTip} selected={false} />}
+                  <div className="col s4">
+                    {returnedTip === "25" ? (
+                      <SelectTip
+                        amount="25"
+                        returnTip={toChildrenTip}
+                        selected={true}
+                      />
+                    ) : (
+                      <SelectTip
+                        amount="25"
+                        returnTip={toChildrenTip}
+                        selected={false}
+                      />
+                    )}
+                  </div>
+                  <div className="col s4">
+                    {returnedTip === "50" ? (
+                      <SelectTip
+                        amount="50"
+                        returnTip={toChildrenTip}
+                        selected={true}
+                      />
+                    ) : (
+                      <SelectTip
+                        amount="50"
+                        returnTip={toChildrenTip}
+                        selected={false}
+                      />
+                    )}
+                  </div>
+                  <div className="col s4">
+                    <CustomTip returnTip={toChildrenTip} />
+                  </div>
                 </div>
-                <div className="col s4">
-                  {returnedTip === "50" ? <SelectTip amount="50" returnTip={toChildrenTip} selected={true} /> : <SelectTip amount="50" returnTip={toChildrenTip} selected={false} />}
-                </div>
-                <div className="col s4">
-                  <CustomTip returnTip={toChildrenTip} />
-                </div>
-              </div>
-              <div style={{ marginTop: "55px" }}>
+              </fieldset>
+              <div>
+              <fieldset style={{ border: "none" }}>
+                <legend className="left-align teal-text text-darken-1">
+                  Number of People
+                </legend>
                 <PeopleNumber returnPeople={toChildrenPeople} />
+              </fieldset>
+                
               </div>
             </div>
             <div className="col s6">

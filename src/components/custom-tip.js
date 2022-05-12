@@ -12,9 +12,9 @@ function CustomTip(props) {
           boxShadow: "none",
           backgroundColor: "#f3f8fb"
         }}
-        placeholder="0"
+        placeholder="Custom"
         type="number"
-        className="validate"
+        className="custom"
         onChange={(event) => returnTip(event.target.value)}
       />
     </div>

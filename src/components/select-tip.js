@@ -11,6 +11,10 @@ function SelectTip(props) {
         style={{
           backgroundColor: props.selected ? "#a0e7df" : "#00474a",
           color: props.selected ? "black" : "white",
+          borderRadius: "5px",
+          marginTop: "10px",
+          marginBottom: "10px",
+          fontSize: "1.2em",
         }}
       >
         {props.amount}%
