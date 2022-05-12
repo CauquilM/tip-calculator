@@ -3,7 +3,7 @@ function ResultCard(props) {
   return (
     <div
       className="card small blue-grey darken-3 section"
-      style={{ borderRadius: "12px", height: "400px" }}
+      style={{ borderRadius: "12px", height: window.innerWidth < 600 ? "300px" : "400px" }}
     >
       <div className="card-content white-text">
         <div className="row">
@@ -40,7 +40,7 @@ function ResultCard(props) {
         </div>
         <a
           className="waves-effect waves-light btn"
-          style={{ marginTop: "125px", color: "#00474a", borderRadius: "4px" }}
+          style={{ marginTop: window.innerWidth < 600 ? "20px" : "125px", color: "#00474a", borderRadius: "4px" }}
         >
           Reset
         </a>
