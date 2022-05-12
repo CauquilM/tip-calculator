@@ -39,7 +39,7 @@ function ResultCard(props) {
           </div>
         </div>
         <a
-          class="waves-effect waves-light btn"
+          className="waves-effect waves-light btn"
           style={{ marginTop: "125px", color: "#00474a", borderRadius: "4px" }}
         >
           Reset

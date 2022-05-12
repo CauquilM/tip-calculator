@@ -4,7 +4,6 @@ function Bill(props) {
   };
   return (
     <div className="input-field">
-      
       <span className="icon">
         <i className="material-icons prefix" style={{ color: "#a3babb" }}>
           attach_money
@@ -17,6 +16,7 @@ function Bill(props) {
           boxShadow: "none",
           backgroundColor: "#f3f8fb",
         }}
+        lang="en"
         id="bill"
         placeholder="0"
         min={0}

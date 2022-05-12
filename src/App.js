@@ -6,7 +6,10 @@ function App() {
     <div className="App valign-wrapper center-align">
       <div className="container center-align">
         <div className="row">
-          <p className="col s12">
+          <p
+            className="col s12 teal-text text-darken-2"
+            style={{ letterSpacing: "8px" }}
+          >
             SPLI
             <br />
             TTER

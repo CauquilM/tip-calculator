@@ -52,8 +52,8 @@ function MainCard() {
   }, [returnedBill, returnedPeople, returnedTip]);
   return (
     <div className="col s8 offset-s2 main-card">
-      <div className="card white" style={{ borderRadius: "20px" }}>
-        <div className="card-content">
+      <div className="card white" style={{ borderRadius: "20px", marginTop: "40px" }}>
+        <div className="card-content" style={{ paddingBottom: "1px"}}>
           <div className="row">
             <div className="col s6" style={{ marginTop: "10px" }}>
               <fieldset style={{ border: "none" }}>
