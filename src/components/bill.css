@@ -1,5 +1,6 @@
+.btn-file {
+  position: relative;
+}
 #funkystyling {
-
-    background-image: url("../images/icon-dollar.svg") left no-repeat;
-    padding-left: 17px;
+  position: absolute;
 }

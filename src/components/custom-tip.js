@@ -1,6 +1,6 @@
-function PeopleNumber(props) {
-  const returnPeople = (tip) => {
-    props.returnPeople(tip);
+function CustomTip(props) {
+  const returnTip = (tip) => {
+    props.returnTip(tip);
   };
   return (
     <div>
@@ -14,11 +14,10 @@ function PeopleNumber(props) {
         placeholder="0"
         type="number"
         className="validate"
-        min={1}
-        onChange={(event) => returnPeople(event.target.value)}
+        onChange={(event) => returnTip(event.target.value)}
       />
     </div>
   );
 }
 
-export default PeopleNumber;
+export default CustomTip;

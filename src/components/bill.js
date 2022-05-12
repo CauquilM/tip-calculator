@@ -1,20 +1,21 @@
-import { useState } from "react";
-import dollar from "../images/icon-dollar.svg"
-
-function Bill() {
-  const [bill, setBill] = useState("0");
+function Bill(props) {
+  const returnBill = (tip) => {
+    props.returnBill(tip);
+  };
   return (
     <div>
-
-      {/* <input
+      <input
         dir="rtl"
-        id="funkystyling"
-        style={{ borderTop: "1px solid", borderRight: "1px solid", borderLeft: "1px solid" }}
-        type="text"
+        style={{
+          borderTop: "1px solid",
+          borderRight: "1px solid",
+          borderLeft: "1px solid",
+        }}
+        placeholder="0"
+        type="number"
         className="validate"
-        onChange={(event) => setBill(event.target.value)}
+        onChange={(event) => returnBill(event.target.value)}
       />
-      <img src={dollar} alt=""></img> */}
     </div>
   );
 }
