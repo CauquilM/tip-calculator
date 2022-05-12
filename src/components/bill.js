@@ -7,9 +7,9 @@ function Bill(props) {
       <input
         dir="rtl"
         style={{
-          borderTop: "1px solid",
-          borderRight: "1px solid",
-          borderLeft: "1px solid",
+          borderBottom: "none",
+          boxShadow: "none",
+          backgroundColor: "#f3f8fb"
         }}
         placeholder="0"
         type="number"

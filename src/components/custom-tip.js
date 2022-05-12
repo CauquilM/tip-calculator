@@ -7,9 +7,8 @@ function CustomTip(props) {
       <input
         dir="rtl"
         style={{
-          borderTop: "1px solid",
-          borderRight: "1px solid",
-          borderLeft: "1px solid",
+          borderBottom: "none",
+          boxShadow: "none",
         }}
         placeholder="0"
         type="number"

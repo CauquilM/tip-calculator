@@ -50,21 +50,41 @@ function MainCard() {
     result();
   }, [returnedBill, returnedPeople, returnedTip]);
   return (
-    <div className="col s8 offset-s2">
-      <div className="card white">
+    <div className="col s8 offset-s2 main-card">
+      <div className="card white" style={{ borderRadius: "20px" }}>
         <div className="card-content">
-          <Bill returnBill={toChildrenBill} />
-          <SelectTip amount="5" returnTip={toChildrenTip} />
-          <SelectTip amount="10" returnTip={toChildrenTip} />
-          <SelectTip amount="15" returnTip={toChildrenTip} />
-          <SelectTip amount="25" returnTip={toChildrenTip} />
-          <SelectTip amount="50" returnTip={toChildrenTip} />
-          <CustomTip returnTip={toChildrenTip} />
-          <PeopleNumber returnPeople={toChildrenPeople} />
-          <p>Bill {returnedBill}</p>
-          <p>Tip {returnedTip}</p>
-          <p>People {returnedPeople}</p>
-          <ResultCard tipPerson={tipPerson} totalPerson={totalPerson} />
+          <div className="row">
+            <div className="col s6" style={{ marginTop: "35px" }}>
+              <Bill returnBill={toChildrenBill} />
+              <div className="row" style={{ marginTop: "35px" }}>
+                <div className="col s4">
+                  <SelectTip amount="5" returnTip={toChildrenTip} />
+                </div>
+                <div className="col s4">
+                  <SelectTip amount="10" returnTip={toChildrenTip} />
+                </div>
+                <div className="col s4">
+                  <SelectTip amount="15" returnTip={toChildrenTip} />
+                </div>
+
+                <div className="col s4">
+                  <SelectTip amount="25" returnTip={toChildrenTip} />
+                </div>
+                <div className="col s4">
+                  <SelectTip amount="50" returnTip={toChildrenTip} />
+                </div>
+                <div className="col s4">
+                  <CustomTip returnTip={toChildrenTip} />
+                </div>
+              </div>
+              <div style={{ marginTop: "55px" }}>
+                <PeopleNumber returnPeople={toChildrenPeople} />
+              </div>
+            </div>
+            <div className="col s6">
+              <ResultCard tipPerson={tipPerson} totalPerson={totalPerson} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
