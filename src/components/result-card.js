@@ -1,9 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useForm } from "react-hook-form";
 function ResultCard(props) {
+  const { reset } = useForm();
+  const test = () => {
+    console.log("test");
+    reset();
+  }
   return (
     <div
       className="card small blue-grey darken-3 section"
-      style={{ borderRadius: "12px", height: window.innerWidth < 600 ? "300px" : "400px" }}
+      style={{
+        borderRadius: "12px",
+        height: window.innerWidth < 600 ? "300px" : "400px",
+      }}
     >
       <div className="card-content white-text">
         <div className="row">
@@ -38,12 +47,21 @@ function ResultCard(props) {
             </p>
           </div>
         </div>
-        <a
-          className="waves-effect waves-light btn"
-          style={{ marginTop: window.innerWidth < 600 ? "20px" : "125px", color: "#00474a", borderRadius: "4px" }}
-        >
-          Reset
-        </a>
+        <form>
+          <button
+            className="waves-effect waves-light btn"
+            style={{
+              marginTop: window.innerWidth < 600 ? "20px" : "125px",
+              color: "#00474a",
+              borderRadius: "4px",
+            }}
+            onClick={test}
+          >
+            Reset
+          </button>
+
+          {/* <button className="waves-effect waves-light btn"  onClick={reset}>Test</button> */}
+        </form>
       </div>
     </div>
   );

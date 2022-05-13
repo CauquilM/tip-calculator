@@ -1,4 +1,6 @@
+import { useForm } from "react-hook-form";
 function Bill(props) {
+  const { reset } = useForm();
   const returnBill = (tip) => {
     props.returnBill(tip);
   };
