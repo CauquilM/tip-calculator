@@ -3,13 +3,13 @@
   "name": "How much is the tip ?",
   "icons": [
     {
-      "src": "maskable.png",
+      "src": "logo512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "maskable.png",
+      "src": "logo512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
